@@ -16,7 +16,8 @@ INC := -I include
 test:
 	@echo "$(OBJECTS)"
 
-all: $(OBJECTS)
+install: $(OBJECTS)
+	@echo "installed in bin."
 
 $(OBJECTS): %: $(SRCDIR)/%.$(SRCEXT)
 	$(CC) $(CFLAGS) $(INC) -o bin/$@ $<
