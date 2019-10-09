@@ -1,0 +1,4 @@
+bin/*
+Build/*
+cx10-codes.xcodeproj/*
+.DS_Store
